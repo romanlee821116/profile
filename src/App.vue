@@ -2,7 +2,7 @@
   <div id='app' class='bg-opacity-80'>
     <full-page ref="fullpage" :options="options" id="fullpage">
     <div class="section">
-      <first-scene></first-scene>
+      <first-scene @movework='moveWork'></first-scene>
     </div>
     <div class="section">
       <second-scene @movepage='changePage'></second-scene>
@@ -70,6 +70,9 @@ export default {
       }
       this.$refs.fullpage.api.moveTo(page);
     },
+    moveWork(index){
+      this.$refs.fullpage.api.moveTo(index);
+    }
   },
   mounted() {
     if (window.innerWidth < 576) {

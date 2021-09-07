@@ -5,8 +5,9 @@
         <p class='text-xl text-white mb-4 font-bold drop-shadow-2xl'>Hello! I'm</p>
         <h1 class='text-5xl mb-16 text-white'> ANYI</h1>
         <a href="#" class='relative px-4 py-2.5 bg-gray-50 bg-opacity-50
-        text-white rounded-xl hover:bg-green-600 z-10'>VIEW MY WORKS</a>
+        text-white rounded-xl hover:bg-green-600 z-10' @click='toWork()'>VIEW MY WORKS</a>
     </div>
+    
     <!-- scroll down -->
     <section id="section07"
     class="demo absolute bottom-10 left-1/2 transform -translate-x-1/2 h-8 text-sm">
@@ -19,6 +20,11 @@
 <script>
 export default {
   name: 'firstScene',
+  methods: {  
+    toWork() {
+      this.$emit('movework', 6)
+    }
+  },
 };
 </script>
 
