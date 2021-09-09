@@ -15,7 +15,7 @@
             <p class='mt-2'>{{item.tools}}</p>
             <a class='rounded-xl bg-gray-50 bg-opacity-50
             px-4 py-2 mt-8 block w-32 mx-auto hover:bg-green-700'
-              :href='item.url' target='_blanket'>VIEW MORE</a>
+              :href='item.url' target='_blank'>VIEW MORE</a>
           </div>
         </div>
       </div>
